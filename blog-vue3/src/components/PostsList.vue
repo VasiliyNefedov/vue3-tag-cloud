@@ -1,7 +1,8 @@
 <template>
   <div>qqqq</div>
   <div v-for="post in posts">
-    {{post.title}}sss
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
   </div>
 </template>
 
