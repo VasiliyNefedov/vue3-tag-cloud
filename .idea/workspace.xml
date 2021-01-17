@@ -6,29 +6,21 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:home-mac" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:home-mac" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:home-mac/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea29f53-11c4-4893-a860-7985dc932dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog-vue3/src/components/TagCloud.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/src/components/PostsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/components/PostsList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/views/Home.vue" afterDir="false" />
     </list>
@@ -36,6 +28,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,8 +93,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610870956712">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610870956712" />
   </component>
 </project>

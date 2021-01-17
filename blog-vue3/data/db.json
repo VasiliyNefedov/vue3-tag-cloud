@@ -3,20 +3,32 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode",
-      "body": "lorem40"
+      "image": "",
+      "description": "",
+      "author": "Tronald Dump",
+      "date": "01.01.2020",
+      "tags": ["tag1", "tag2", "tag3", "tag4"],
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolorem est excepturi itaque minima possimus repudiandae voluptatum. Accusamus accusantium alias, corporis earum excepturi illo, illum, libero maiores nesciunt nostrum obcaecati quo quod repellendus! Accusantium blanditiis cupiditate deleniti distinctio exercitationem modi nemo perferendis perspiciatis quas saepe sit sunt, totam voluptates voluptatibus!"
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode",
-      "body": "lorem40"
+      "title": "CSS tips",
+      "image": "",
+      "description": "",
+      "author": "J. Statham",
+      "date": "03.01.2020",
+      "tags": ["tag1", "tag3", "tag4"],
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore mollitia, perspiciatis possimus quaerat repudiandae saepe sunt totam! Ad aliquid, aperiam eaque explicabo illo incidunt ipsa, laborum, magnam quos ut vero?"
     },
     {
       "id": 3,
-      "title": "json-server",
-      "author": "typicode",
-      "body": "lorem40"
+      "title": "Incredible IE",
+      "image": "",
+      "description": "",
+      "author": "B. Marley",
+      "date": "05.01.2020",
+      "tags": ["tag1", "tag2"],
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam assumenda atque consectetur cupiditate delectus distinctio doloremque eaque eius et fugit libero, mollitia numquam pariatur porro possimus quae quis quisquam totam ut veritatis voluptas voluptatem? Aliquid aspernatur beatae consequatur cumque esse excepturi harum impedit inventore iusto nesciunt nihil, odio praesentium quas ratione suscipit voluptates, voluptatum! Aliquid architecto, doloremque dolorum, ducimus et eveniet ex nostrum quaerat quam quas quis, rerum veritatis!"
     }
   ],
   "comments": [
