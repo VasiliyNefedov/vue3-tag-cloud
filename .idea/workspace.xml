@@ -6,6 +6,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
@@ -16,12 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea29f53-11c4-4893-a860-7985dc932dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog-vue3/src/components/TagCloud.vue" afterDir="false" />
+    <list default="true" id="dea29f53-11c4-4893-a860-7985dc932dbe" name="Default Changelist" comment="tag cloud added">
+      <change afterPath="$PROJECT_DIR$/blog-vue3/data/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-vue3/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-vue3/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/data/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/src/components/PostsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/components/PostsList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue3/src/components/TagCloud.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/components/TagCloud.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-vue3/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-vue3/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/blog-vue3/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,6 +64,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -65,7 +79,18 @@
       <workItem from="1610817398082" duration="248000" />
       <workItem from="1610817709073" duration="754000" />
       <workItem from="1610818811663" duration="8576000" />
+      <workItem from="1611042057614" duration="4830000" />
+      <workItem from="1611047104617" duration="712000" />
+      <workItem from="1611048290083" duration="6882000" />
     </task>
+    <task id="LOCAL-00001" summary="tag cloud added">
+      <created>1610890516879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610890516879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,7 +107,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="home-mac/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -97,11 +122,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="tag cloud added" />
+    <option name="LAST_COMMIT_MESSAGE" value="tag cloud added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610870956712">
+    <state x="1331" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610890534746">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610870956712" />
+    <state x="1331" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1610890534746" />
+    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611042085360">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1560" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611042085360" />
   </component>
 </project>

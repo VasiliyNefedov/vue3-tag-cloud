@@ -2,7 +2,7 @@
   <div v-for="post in posts" class="container">
     <h3>{{post.title}}</h3>
     <p>{{post.body}}</p>
-    <span v-for="tag in post.tags" :key="tag" class="tag" @click="$emit('getTag', tag)"> #{{tag}}</span>
+    <span v-for="tag in post.tags" :key="tag" class="tag" @click="addTagToCloud(tag)"> #{{tag}}</span>
     <div class="signature">
       <span>{{post.author}}</span> |
       <span>{{post.date}}</span>
@@ -12,10 +12,22 @@
 
 <script>
 import {ref} from 'vue'
+import {useStore} from 'vuex'
 
 export default {
   name: 'PostsList',
-  props: ['posts']
+  props: ['posts'],
+  setup() {
+    const store = useStore()
+
+    const addTagToCloud = (tag) => {
+      if (!store.state.tagCloud.includes(tag)) {
+        store.commit('addTag', tag)
+      }
+    }
+
+    return {addTagToCloud}
+  }
 }
 </script>
 

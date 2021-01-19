@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
 <!--    <button @click="addSomePost">click</button>-->
     <TagCloud :tagFromParent="currentTag" />
-    <PostsList :posts="posts" @getTag="test"/>
+    <PostsList :posts="posts" />
   </div>
 </template>
 
@@ -11,6 +11,7 @@
 // @ is an alias to /src
 import PostsList from '@/components/PostsList.vue'
 import {ref, computed, watch} from "vue";
+import {useStore} from "vuex";
 import TagCloud from "@/components/TagCloud";
 
 export default {
@@ -20,20 +21,22 @@ export default {
     PostsList
   },
   setup() {
+    const store = useStore()
     const currentTag = ref('')
     const tagCloud = ref([])
     const posts = ref([])
+    const viewPosts = ref([])
     const error = ref(null)
 
+    const tags = ref(store.state.tagCloud)
+
     // computed()
+    const viewedPosts = computed(() => viewPosts.value = posts.value.filter(post => tags.value.includes(post.tags[0])))
 
     // watch(currentTag.value, () => {
     //   props.tagFromParent
     // })
 
-    const test = (e) => {
-      currentTag.value = e
-    }
 
     const load = async () => {
       try {
@@ -65,7 +68,7 @@ export default {
       }
     }
 
-    return {posts, error, addSomePost, currentTag, tagCloud, test}
+    return {posts, error, addSomePost, currentTag, tagCloud, viewedPosts}
   }
 }
 </script>

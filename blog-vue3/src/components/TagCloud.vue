@@ -3,13 +3,14 @@
     <label for="tagCloud">tags:</label>
     <input id="tagCloud" type="text" placeholder="press enter for each one" v-model="tagEnter" @keydown.enter="addTag">
     <div>
-      <span v-for="(tag, idx) in tagList" :key="tag" @click="removeTag(idx)">#{{ tag }}</span>
+      <span v-for="(tag, idx) in tagListStore" :key="tag" @click="removeTag(idx)">#{{ tag }}</span>
     </div>
   </div>
 </template>
 
 <script>
-import {ref, onUpdated} from 'vue'
+import {ref, onUpdated, computed} from 'vue'
+import {useStore} from 'vuex'
 
 export default {
   name: "TagCloud",
@@ -17,37 +18,25 @@ export default {
     tagFromParent: String
   },
   setup(props) {
-    const tagFromParent = ref('')
+    const store = useStore()
     const tagEnter = ref('')
-    const tagList = ref(['tag2', "tag3"])
+
+    const tagListStore = computed(()=> store.state.tagCloud)
+
 
     const addTag = () => {
-      if (tagEnter.value !== '' && !tagList.value.includes(tagEnter.value)) {
-        tagList.value.push(tagEnter.value)
+      if (tagEnter.value !== '' && !store.state.tagCloud.includes(tagEnter.value)) {
+        store.commit('addTag', tagEnter.value)
       }
       tagEnter.value = ''
     }
 
-    const removeTag = (idx) => {
-      tagList.value.splice(idx, 1)
-    }
 
-    onUpdated(() => {
-      if (props.tagFromParent !== tagFromParent.value) {
-        tagFromParent.value = props.tagFromParent
-      }
-      if (!tagList.value.includes(tagFromParent.value)) {
-
-        tagList.value.push(props.tagFromParent)
-        // tagFromParent.value = ''
-      }
-      console.log('123')
-    })
+    const removeTag = (idx) => store.commit('removeTag', idx)
 
 
 
-
-    return {tagList, tagEnter, addTag, removeTag}
+    return {tagEnter, addTag, removeTag, tagListStore}
   }
 }
 </script>
